@@ -1,26 +1,28 @@
-# PyUpload
-[![Build Status](https://travis-ci.com/yukinotenshi/pyupload.svg?branch=master)](https://travis-ci.com/yukinotenshi/pyupload)
+# litter
 
-A simple CLI tool to upload file with direct link
+A simple CLI tool to upload temporary files to [Litterbox](https://litterbox.catbox.moe/) with an upload link.
 
-Made for those who are too lazy to open SCP/SFTP
+Made for those who are too lazy to open SCP/SFTP.
 
 ## Installation
 ```
-pip install pyupload
+pip install litterbox
 ```
 
 ## Usage
 
+You can use either Litterbox or Catbox (for permanent) for hosting. By default, it uses Litterbox.
+
 ```
-pyupload <filename> --host=<host>
+litter <filename> --host=<host|default=litterbox> -t <time|1h/12h/24h/72h>
 ```
 
 ## Example
 ```
-pyupload .gitignore --host=catbox
+litter test.jpg -t 12h   
 
-[1674/1674] bytes |====================>|Your link : https://files.catbox.moe/e03ygs.gitignore
+[71097/71097] bytes |====================>|
+Your link : https://litter.catbox.moe/zmr6i6.jpg
 ```
 
 ## Running Tests
