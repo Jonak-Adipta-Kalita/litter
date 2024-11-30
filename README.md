@@ -6,7 +6,7 @@ Made for those who are too lazy to open SCP/SFTP.
 
 ## Installation
 ```
-pip install litterbox
+pip install pylitter
 ```
 
 ## Usage
