@@ -14,7 +14,14 @@ uploader_classes = {
 def upload(host, file, time):
     try:
         uploader_class = uploader_classes[host]
-        uploader_instance = uploader_class(file)
+
+        if host == "litterbox":
+            uploader_instance = uploader_class(file, time)
+        elif host == "catbox":
+            uploader_instance = uploader_class(file)
+        else:
+            print("choose either catbox/litterbox as host")
+            
         result = uploader_instance.execute()
         print(f"\nYour link : {result}")
     except Exception as e:
