@@ -31,4 +31,4 @@ python3 upload_test.py
 ```
 
 ## Issues? Changes?
-Just open an issue/pull requests
+Just open an issue/pull request
