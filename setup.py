@@ -1,7 +1,15 @@
 from setuptools import setup, find_packages
 
+CLASSIFIERS = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+
 setup(
-    name="Litter",
+    name="litterbox",
     version="0.1.0",
     packages=find_packages(),
     author="moisentinel, yukinotenshi",
@@ -11,7 +19,8 @@ setup(
     install_requires=["requests", "requests-toolbelt", "click"],
     description="CLI tool to upload file to litterbox/catbox",
     keywords="direct upload cli",
+    classifiers=CLASSIFIERS,
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    entry_points={"console_scripts": ["pyupload=pyupload.main:upload"]},
+    entry_points={"console_scripts": ["litter=litter.main:upload"]},
 )
