@@ -3,7 +3,7 @@ import requests
 import unittest
 from random import choice
 from string import ascii_letters
-from pyupload.uploader import *
+from litter.uploader import *
 
 
 def generate_random_file_content():
@@ -33,13 +33,8 @@ class TestUploadMethods(unittest.TestCase):
         result = uploader.execute()
         self.compare(result)
 
-    def test_uguu(self):
-        uploader = UguuUploader(self.filename)
-        result = uploader.execute()
-        self.compare(result)
-
-    def test_fileio(self):
-        uploader = FileioUploader(self.filename)
+    def test_litterbox(self):
+        uploader = LitterboxUploader(self.filename, time="1h")
         result = uploader.execute()
         self.compare(result)
 

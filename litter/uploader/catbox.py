@@ -1,4 +1,4 @@
-from pyupload.uploader.base import Uploader
+from litter.uploader.base import Uploader
 
 
 class CatboxUploader(Uploader):
