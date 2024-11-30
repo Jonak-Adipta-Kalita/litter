@@ -8,12 +8,12 @@ class LitterboxUploader(Uploader):
         self.time = time
 
     def execute(self):
-        file = open(self.filename, 'rb')
+        file = open(self.filename, "rb")
         try:
             data = {
-                'reqtype': 'fileupload',
-                'time': self.time,  
-                'fileToUpload': (file.name, file, self._mimetype())
+                "reqtype": "fileupload",
+                "time": self.time,
+                "fileToUpload": (file.name, file, self._mimetype()),
             }
             response = self._multipart_post(data)
         finally:

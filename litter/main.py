@@ -6,10 +6,11 @@ uploader_classes = {
     "litterbox": LitterboxUploader,
 }
 
+
 @click.command()
-@click.option('-h', '--host', default='litterbox', help='catbox/litterbox')
-@click.option('-t', '--time', help='duration (only for litterbox): 1h/12h/24h/72h')
-@click.argument('file')
+@click.option("-h", "--host", default="litterbox", help="catbox/litterbox")
+@click.option("-t", "--time", help="duration (only for litterbox): 1h/12h/24h/72h")
+@click.argument("file")
 def upload(host, file, time):
     try:
         uploader_class = uploader_classes[host]
@@ -18,6 +19,7 @@ def upload(host, file, time):
         print(f"\nYour link : {result}")
     except Exception as e:
         print(e)
+
 
 if __name__ == "__main__":
     upload()

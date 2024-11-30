@@ -7,12 +7,12 @@ class CatboxUploader(Uploader):
         self.file_host_url = "https://catbox.moe/user/api.php"
 
     def execute(self):
-        file = open(self.filename, 'rb')
+        file = open(self.filename, "rb")
         try:
             data = {
-                'reqtype': 'fileupload',
-                'userhash': '',
-                'fileToUpload': (file.name, file, self._mimetype())
+                "reqtype": "fileupload",
+                "userhash": "",
+                "fileToUpload": (file.name, file, self._mimetype()),
             }
             response = self._multipart_post(data)
         finally:

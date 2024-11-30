@@ -7,7 +7,7 @@ from litter.uploader import *
 
 
 def generate_random_file_content():
-    result = ''
+    result = ""
     for _ in range(30):
         result += choice(ascii_letters)
 
@@ -17,8 +17,8 @@ def generate_random_file_content():
 class TestUploadMethods(unittest.TestCase):
     def setUp(self):
         self.content = generate_random_file_content()
-        self.filename = 'testfile'
-        with open(self.filename, 'w') as f:
+        self.filename = "testfile"
+        with open(self.filename, "w") as f:
             f.write(self.content)
 
     def tearDown(self):
