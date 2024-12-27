@@ -14,12 +14,12 @@ pip install pylitter
 You can use either Litterbox or Catbox (for permanent) for hosting. By default, it uses Litterbox.
 
 ```
-litter <filename> --host=<host|default=litterbox> -t <time|1h/12h/24h/72h>
+throw filename (for|forever) [1h/12h/24h/72h]
 ```
 
 ## Example
 ```
-litter test.jpg -t 12h   
+throw test.jpg for 12h   
 
 [71097/71097] bytes |====================>|
 Your link : https://litter.catbox.moe/zmr6i6.jpg
