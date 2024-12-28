@@ -10,7 +10,7 @@ CLASSIFIERS = [
 
 setup(
     name="pylitter",
-    version="1.0.0",
+    version="1.1.0",
     packages=find_packages(),
     author="moisentinel, yukinotenshi",
     author_email="nibir@nibirsan.org, gabriel.bentara@gmail.com",
@@ -22,5 +22,7 @@ setup(
     classifiers=CLASSIFIERS,
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    entry_points={"console_scripts": ["litter=litter.main:upload"]},
+    entry_points={
+        "console_scripts": ["throw=litter.main:cli", "litter=litter.main:cli"]
+    },
 )
