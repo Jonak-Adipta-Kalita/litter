@@ -23,7 +23,7 @@ throw file (for|forever) [1h/12h/24h/72h]
 >[!NOTE]
 >The old command `litter` and the new `throw` can still be used interchangeably, but it is recommended to use the superior `throw`.
 
->![IMPORTANT]
+>[!IMPORTANT]
 >Remember that Catbox has a file size limit of 200mb.
 
 ## Examples
