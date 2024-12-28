@@ -1,6 +1,6 @@
 # litter
 
-A simple CLI tool to upload temporary files to [Litterbox](https://litterbox.catbox.moe/) with an upload link.
+A simple CLI tool to upload temporary files to [Litterbox](https://litterbox.catbox.moe/)/[Catbox](https://catbox.moe/). You type a command, you get a link. As simple as that!
 
 Made for those who are too lazy to open SCP/SFTP.
 
@@ -9,15 +9,25 @@ Made for those who are too lazy to open SCP/SFTP.
 pip install pylitter
 ```
 
+or use `pipx` if you're on Arch or equivalent.
 ## Usage
-
-You can use either Litterbox or Catbox (for permanent) for hosting. By default, it uses Litterbox.
+The main command is "throw", because just "**throw it into the litter, man**". Geddit?
 
 ```
-throw filename (for|forever) [1h/12h/24h/72h]
+throw file (for|forever) [1h/12h/24h/72h]
 ```
 
-## Example
+- Use `for <time>` if you want to upload to Litterbox, temporary.
+- Use `forever` if you want to upload to Catbox, permanent.
+
+>[!NOTE]
+>The old command `litter` and the new `throw` can still be used interchangeably, but it is recommended to use the superior `throw`.
+
+>![IMPORTANT]
+>Remember that Catbox has a file size limit of 200mb.
+
+## Examples
+
 ```
 throw test.jpg for 12h   
 
@@ -25,10 +35,27 @@ throw test.jpg for 12h
 Your link : https://litter.catbox.moe/zmr6i6.jpg
 ```
 
-## Running Tests
 ```
-python3 upload_test.py
+throw test2.jpg forever
+
+[23039/23039] bytes |====================>|
+Your link : https://files.catbox.moe/nxulxl.jpg
 ```
 
-## Issues? Changes?
-Just open an issue/pull request
+## Acknowledgements
+- [@yukinotenshi](https://github.com/yukinotenshi) for creating [PyUpload](https://github.com/yukinotenshi/pyupload).
+- [catbox.llc](https://catbox.llc/) for litterbox and catbox. 
+
+You guys are amazing!
+## Contributing
+If you wish to, you can contribute to the project by submitting a pull request.
+
+The best way to contribute would be to suggest the developer a provider or a feature, more better if you can show a logic of how that can be done, you'll be mentioned and thanked!
+### Sponsoring
+Money is appreciated, but **stars even more**! Feel free to star the project if you think it is worthy of one. Moreover, you can just talk, banter and argue with the developer as that way you'll be paying with your time.
+
+<div align="center">
+<a href="https://buymeacoffee.com/nibirsan"><img src="https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee"></a>
+<a href="https://run.nibirsan.org/support"><img src="https://img.shields.io/badge/-buy_me_a%C2%A0chai_(UPI)-63452c?logo=mocha&logoColor=f5f5f5"></a>
+<p><sup>Never forget, you are SUPER cool!</sup></p>
+</div>
