@@ -13,9 +13,9 @@ class Uploader:
     @staticmethod
     def _progress_bar(monitor):
         progress = int(monitor.bytes_read / monitor.len * 20)
-        sys.stdout.write("\r[{}/{}] bytes |".format(monitor.bytes_read, monitor.len))
-        sys.stdout.write("{}>".format("=" * progress))
-        sys.stdout.write("{}|".format(" " * (20 - progress)))
+        sys.stdout.write(f"\r[{monitor.bytes_read}/{monitor.len}] bytes |")
+        sys.stdout.write(f"{"=" * progress}>")
+        sys.stdout.write(f"{" " * (20 - progress)}|")
         sys.stdout.flush()
 
     def _multipart_post(self, data):
