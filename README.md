@@ -54,8 +54,4 @@ The best way to contribute would be to suggest the developer a provider or a fea
 ### Sponsoring
 Money is appreciated, but **stars even more**! Feel free to star the project if you think it is worthy of one. Moreover, you can just talk, banter and argue with the developer as that way you'll be paying with your time.
 
-<div align="center">
-<a href="https://buymeacoffee.com/nibirsan"><img src="https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee"></a>
-<a href="https://run.nibirsan.org/support"><img src="https://img.shields.io/badge/-buy_me_a%C2%A0chai_(UPI)-63452c?logo=mocha&logoColor=f5f5f5"></a>
-<p><sup>Never forget, you are SUPER cool!</sup></p>
-</div>
+<p align="center"><sup>Never forget, you are SUPER cool!</sup></p>
