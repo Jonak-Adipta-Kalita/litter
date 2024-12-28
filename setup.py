@@ -10,7 +10,7 @@ CLASSIFIERS = [
 
 setup(
     name="pylitter",
-    version="1.1.0",
+    version="1.1.1",
     packages=find_packages(),
     author="moisentinel, yukinotenshi",
     author_email="nibir@nibirsan.org, gabriel.bentara@gmail.com",
